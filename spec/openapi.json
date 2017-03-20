@@ -1,1 +1,24 @@
-{"swagger":"2.0","info":{"title":"echo-api","description":"Open API Swagger Spec"}}
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "echo-api",
+        "description": "Open API Swagger Spec"
+    },
+    "paths": {
+        "/status/": {
+            "get": {
+                "summary": "Returns the HTTP Status indicated by statusId ",
+                "description": "Returns the HTTP Status indicated by statusId to the caller.",
+                "parameters": [
+                    {
+                        "name": "statusId",
+                        "in": "query",
+                        "description": "HTTP Status ID",
+                        "type": "integer"
+                    }
+                ],
+                "responses": {}
+            }
+        }
+    }
+}
